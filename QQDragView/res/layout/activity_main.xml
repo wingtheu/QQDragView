@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:text="拖拽小红点"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="#bbbbbb"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/red_point"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/title"
+            android:background="@drawable/red_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="重置" />
+
+</LinearLayout>
